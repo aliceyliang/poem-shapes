@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Poem Shapes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-12@sm">
+      <h1>Poem Shapes</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4@sm col-3@md">
+      <div class="filters-group">
+        <label for="filters-search-input" class="filter-label">Search</label>
+        <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12@sm filters-group-wrap">
+      <div class="filters-group">
+        <p class="filter-label">Filter</p>
+        <div class="btn-group filter-options">
+          <button class="btn btn--primary" data-group="body">Flowers</button>
+          <button class="btn btn--primary" data-group="aging">Childhood</button>
+          <button class="btn btn--primary" data-group="Fathers">Fathers</button>
+          <button class="btn btn--primary" data-group="Audio">Audio</button>
+        </div>
+      </div>
+      <fieldset class="filters-group">
+        <legend class="filter-label">Sort</legend>
+        <div class="btn-group sort-options">
+          <label class="btn active">
+            <input type="radio" name="sort-value" value="dom" checked /> Default
+          </label>
+          <label class="btn">
+            <input type="radio" name="sort-value" value="title" /> Title
+          </label>
+          <label class="btn">
+            <input type="radio" name="sort-value" value="date-created" /> Date Created
+          </label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="holder">
+  <div id="grid" class="row my-shuffle-container">
+
+
+
+            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["desire"]' data-date-created="2014-01-01" data-title="affair.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/affair.svg" srcset="img/affair.svg 1x, img/affair.svg 2x"
+                      alt="The Affair" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/affair" target="_blank" rel="noopener">The Affair</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">Wayne Miller</p>
+                </div>
+              </div>
+            </figure>
+
+
+            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["birds", "flowers"]' data-date-created="2018-01-01" data-title="burn-1.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/burn-1.svg" srcset="img/burn-1.svg 1x, img/burn-1.svg 2x"
+                      alt="Burn" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/burn-1" target="_blank" rel="noopener">Burn</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">Janice N. Harrington</p>
+                </div>
+              </div>
+            </figure>
+
+
+            <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--overlay" data-groups='["dreams"]' data-date-created="2018-01-01" data-title="one-sweet-braid-down-she-back.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/one-sweet-braid-down-she-back.svg" srcset="img/one-sweet-braid-down-she-back.svg 1x, img/one-sweet-braid-down-she-back.svg 2x"
+                      alt="One Sweet Braid Down She Back" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/one-sweet-braid-down-she-back" target="_blank" rel="noopener">One Sweet Braid Down She Back</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">Cheryl Boyce-Taylor</p>
+                </div>
+              </div>
+            </figure>
+
+
+            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["grief"]' data-date-created="2014-01-01" data-title="token-loss.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/token-loss.svg" srcset="img/token-loss.svg 1x, img/token-loss.svg 2x"
+                      alt="Token Loss" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/token-loss" target="_blank" rel="noopener">Token Loss</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">Kay Ryan</p>
+                </div>
+              </div>
+            </figure>
+
+
+            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["aging", "body"]' data-date-created="2013-01-01" data-title="my-skeleton.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/my-skeleton.svg" srcset="img/my-skeleton.svg 1x, img/my-skeleton.svg 2x"
+                      alt="My Skeleton" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/my-skeleton" target="_blank" rel="noopener">My Skeleton</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">Jane Hirshfield</p>
+                </div>
+              </div>
+            </figure>
+
+
+            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["cities"]' data-date-created="1922-01-01" data-title="citys-love.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/citys-love.svg" srcset="img/citys-love.svg 1x, img/citys-love.svg 2x"
+                      alt="The City&#039;s Love" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/citys-love" target="_blank" rel="noopener">The City&#039;s Love</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">Claude McKay</p>
+                </div>
+              </div>
+            </figure>
+
+
+            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["childhood"]' data-date-created="2013-01-01" data-title="my-best-friends-big-sister.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/my-best-friends-big-sister.svg" srcset="img/my-best-friends-big-sister.svg 1x, img/my-best-friends-big-sister.svg 2x"
+                      alt="To My Best Friend&#039;s Big Sister" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/my-best-friends-big-sister" target="_blank" rel="noopener">To My Best Friend&#039;s Big Sister</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">Ross Gay</p>
+                </div>
+              </div>
+            </figure>
+
+
+            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["cities"]' data-date-created="2009-01-01" data-title="how-simile-works.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/how-simile-works.svg" srcset="img/how-simile-works.svg 1x, img/how-simile-works.svg 2x"
+                      alt="How Simile Works" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/how-simile-works" target="_blank" rel="noopener">How Simile Works</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">Albert Goldbarth</p>
+                </div>
+              </div>
+            </figure>
+
+
+            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["aging"]' data-date-created="2010-01-01" data-title="widows-gravesend.svg">
+              <div class="picture-item__inner">
+            <!-- <div class="aspect aspect--16x9"> -->
+              <!-- <div class="aspect__inner"> -->
+                    <img src="img/widows-gravesend.svg" srcset="img/widows-gravesend.svg 1x, img/widows-gravesend.svg 2x"
+                      alt="The Widows of Gravesend" />
+              <!-- </div> -->
+            <!-- </div> -->
+                <div class="picture-item__details">
+                  <figcaption class="picture-item__title"><a href="https://poets.org/poem/widows-gravesend" target="_blank" rel="noopener">The Widows of Gravesend</a></figcaption>
+                  <p class="picture-item__tags hidden@xs">L. S. Asekoff</p>
+                </div>
+              </div>
+            </figure>
+
+
+
+                            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["animals"]' data-date-created="2012-01-01" data-title="gila.svg">
+                        <div class="picture-item__inner">
+                              <img src="img/gila.svg" srcset="img/gila.svg 1x, img/gila.svg 2x"
+                                alt="Gila" />
+                          <div class="picture-item__details">
+                            <figcaption class="picture-item__title"><a href="https://poets.org/poem/gila" target="_blank" rel="noopener">Gila</a></figcaption>
+                            <p class="picture-item__tags hidden@xs">Rigoberto González</p>
+                          </div>
+                        </div>
+                      </figure>
+                            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["beauty"]' data-date-created="2017-01-01" data-title="beauty-0.svg">
+                        <div class="picture-item__inner">
+                              <img src="img/beauty-0.svg" srcset="img/beauty-0.svg 1x, img/beauty-0.svg 2x"
+                                alt="Beauty" />
+                          <div class="picture-item__details">
+                            <figcaption class="picture-item__title"><a href="https://poets.org/poem/beauty-0" target="_blank" rel="noopener">Beauty</a></figcaption>
+                            <p class="picture-item__tags hidden@xs">Elinor Wylie</p>
+                          </div>
+                        </div>
+                      </figure>
+                            <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--overlay" data-groups='["cities"]' data-date-created="2007-01-01" data-title="atlantic-city-sunday-morning.svg">
+                        <div class="picture-item__inner">
+                              <img src="img/atlantic-city-sunday-morning.svg" srcset="img/atlantic-city-sunday-morning.svg 1x, img/atlantic-city-sunday-morning.svg 2x"
+                                alt="Atlantic City Sunday Morning" />
+                          <div class="picture-item__details">
+                            <figcaption class="picture-item__title"><a href="https://poets.org/poem/atlantic-city-sunday-morning" target="_blank" rel="noopener">Atlantic City Sunday Morning</a></figcaption>
+                            <p class="picture-item__tags hidden@xs">Gregory Pardlo</p>
+                          </div>
+                        </div>
+                      </figure>
+                            <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--overlay" data-groups='["america", "body"]' data-date-created="2018-01-01" data-title="brown-girl-has-walked-wild-palms-open.svg">
+                        <div class="picture-item__inner">
+                              <img src="img/brown-girl-has-walked-wild-palms-open.svg" srcset="img/brown-girl-has-walked-wild-palms-open.svg 1x, img/brown-girl-has-walked-wild-palms-open.svg 2x"
+                                alt="Brown Girl Has Walked Into the Wild, Palms Open" />
+                          <div class="picture-item__details">
+                            <figcaption class="picture-item__title"><a href="https://poets.org/poem/brown-girl-has-walked-wild-palms-open" target="_blank" rel="noopener">Brown Girl Has Walked Into the Wild, Palms Open</a></figcaption>
+                            <p class="picture-item__tags hidden@xs">Barbara Jane Reyes</p>
+                          </div>
+                        </div>
+                      </figure>
+
+
+  </div>
+
+  <div class="col-1@sm col-1@xs my-sizer-element"></div>
+
+</div>
+
+</div>
+  <script src='https://unpkg.com/shufflejs@5'></script>
+
+
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
