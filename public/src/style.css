@@ -1223,6 +1223,7 @@ code:not([class*=language]):after, code:not([class*=language]):before {
   border: 1px solid #95a5a6;
   color: #34495e;
   font-size: 0.9rem;
+  font-weight: 300;
   background-color: rgba(52, 73, 94, 0);
   transition: .2s ease-out;
   cursor: pointer;

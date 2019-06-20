@@ -33,7 +33,7 @@
   <link rel="dns-prefetch" href="https://www.google-analytics.com/">
   <link rel="dns-prefetch" href="https://unpkg.com/">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Open+Sans|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Open+Sans|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
 
 
   <!-- <link rel="stylesheet" href="./src/prism.css"> -->
@@ -73,13 +73,45 @@
 
 
   <div id="ex1" class="modal">
-    <p>Thanks for clicking. That felt good.</p>
-    <a href="#" rel="modal:close">Close</a>
+    <h3>About</h3>
+    <p>These poem shapes come from the American Academy of Poets API, and each poem shape links back to the poem on their site, poets.org.
+      Around 4,000 poems are available with this tool!</p>
+
+    <p>This site is made possible by <a href="https://vestride.github.io/Shuffle/" target="_blank">Shuffle.js</a>. </p>
+
+    <p><a href="https://aliceyliang.com" target="_blank">Alice Liang 2019</a> | View on Github</p>
+
+    <a href="#" rel="modal:close"><span style="font-weight:bold;">Close</span></a>
   </div>
 
   <div id="ex2" class="modal">
-    <p>Help TK TK.</p>
-    <a href="#" rel="modal:close">Close</a>
+    <h3>Help</h3>
+    <p><span style="font-weight:bold;">What is this?</span><br></br>
+    Explore poems through their shapes! Sometimes you want to read a short poem, sometimes you want to read a long poem, sometimes a poem just calls out to you. Click the poem shape that intrigues you to read it on poets.org.
+</p>
+    <p><span style="font-weight:bold">What are the colors?</span><br></br>
+    Each color corresponds to a theme, tagged by the American Academy of Poets. There are 50 themes possible in this selection. This is to hopefully encourage poetry reading across a wide selection of topics!
+</p>
+    <p><span style="font-weight:bold">Why are there no titles or authors?</span><br></br>
+    You can click through each poem to see all that information and more. This is to encourage an exploration of a larger breadth of poems.
+</p>
+    <p><span style="font-weight:bold">How do I get more poems?</span><br></br>
+    The site loads with a few select poems, but you can add more at random by clicking "Add more poems to the top" to get more at the top of your screen, or "Add more poems to the bottom" for more after you scroll. You can also press "Remove some poems" to get rid of some. Around 4,000 poems are available!
+</p>
+    <p><span style="font-weight:bold">How do I sort the poems?</span><br></br>
+    Sorting is more fun when you add more poems (see above). The poems currently on your screen will be sorted approximately with the following selections:
+    - Most (fewest) lines: Highest (lowest) number of lines in the poem, e.g. height of the shape)
+    - Longest (shortest) lines: Highest (lowest) number of characters in the longest line in the poem, e.g. the maximum width of the shape.
+    - Most (fewest) characters: Highest (lowest) number of total characters in the poem, e.g. the colored area of the poem.
+    - Shuffle poem order: Randomize the order of the poems currently on your screen.
+</p>
+    <p><span style="font-weight:bold">What are these one line poem shapes?</span><br></br>
+    Mostly prose poetry! If the author doesn't include line breaks, we don't either. But, note that all poems displayed here cut off at 210 characters. Poems longer than that have truncated line shapes, but you can still see the full poem if you click through.
+</p>
+    <p><span style="font-weight:bold">Why doesn't this work on my phone?</span><br></br>
+    Sorry, this isn't optimized for mobile viewing yet.
+</p>
+    <a href="#" rel="modal:close"><span style="font-weight:bold;">Close</span></a>
   </div>
 
 <main role="main" id="main">
