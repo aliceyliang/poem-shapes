@@ -58,10 +58,14 @@ Demo.prototype._generateBoxes = function (itemsToCreate) {
     var box = document.createElement('div');
     box.className = 'box';
     box.style.backgroundColor = '#ffffff';
-    box.setAttribute('data-reviews', this.getRandomInt(1, 150));
 
     var index = this.getRandomInt(10, 3000);
     var arr = poems[index];
+
+    box.setAttribute('data-reviews', arr.num_lines);
+    box.setAttribute('data-lengths', arr.max_len);
+    box.setAttribute('data-chars', arr.chars);
+
     box.innerHTML =   ` <img src = "../img/${arr.short_name}.svg" alt=${arr.title}> `
     var modClass = arr.fig;
     if (modClass == '') {
@@ -223,6 +227,28 @@ Demo.prototype.sortBy = function (value) {
       by: this.getReviews,
     };
 
+  } else if (value === 'longest-reviews') {
+    sortOptions = {
+      reverse: true,
+      by: this.getLengths,
+    };
+
+  } else if (value === 'shortest-reviews') {
+    sortOptions = {
+      by: this.getLengths,
+    };
+
+  } else if (value === 'most-chars') {
+    sortOptions = {
+      reverse: true,
+      by: this.getChars,
+    };
+
+  } else if (value === 'least-chars') {
+    sortOptions = {
+      by: this.getChars,
+    };
+
   } else if (value === 'random') {
     sortOptions = { randomize: true };
 
@@ -236,6 +262,14 @@ Demo.prototype.sortBy = function (value) {
 
 Demo.prototype.getReviews = function (element) {
   return parseInt(element.getAttribute('data-reviews'), 10);
+}
+
+Demo.prototype.getLengths = function (element) {
+  return parseInt(element.getAttribute('data-max-len'), 10);
+}
+
+Demo.prototype.getChars = function (element) {
+  return parseInt(element.getAttribute('data-chars'), 10);
 }
 
 Demo.prototype.onFilterChange = function (event) {
