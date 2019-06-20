@@ -33,6 +33,9 @@
   <link rel="dns-prefetch" href="https://www.google-analytics.com/">
   <link rel="dns-prefetch" href="https://unpkg.com/">
 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Open+Sans|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
+
+
   <!-- <link rel="stylesheet" href="./src/prism.css"> -->
   <link rel="stylesheet" href="./src/normalize.css">
   <link rel="stylesheet" href="./src/style.css">
@@ -40,6 +43,9 @@
   <link rel="stylesheet" href="./src/css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
   <script>window.site_url = "/Shuffle";</script>
 </head>
@@ -53,11 +59,11 @@
           </a>
           <div class="site-nav__links">
             <div class="site-nav__link">
-              <a href = "/about" target="_blank"><button class="site-nav__link btn" >About</button></a>
+              <a href="#ex1" rel="modal:open"><button class="site-nav__link btn" >About</button></a>
             </div>
 
               <div class="site-nav__link">
-                <a href = "/help"><button class="site-nav__link btn" >Help</button></a>
+                <a href="#ex2" rel="modal:open"><button class="site-nav__link btn" >Help</button></a>
               </div>
           </div>
         </div>
@@ -65,6 +71,16 @@
     </div>
   </nav>
 
+
+  <div id="ex1" class="modal">
+    <p>Thanks for clicking. That felt good.</p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="ex2" class="modal">
+    <p>Help TK TK.</p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
 
 <main role="main" id="main">
   <style>

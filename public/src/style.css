@@ -48,7 +48,8 @@ nav>a {
 }
 
 body {
-  font-family: Open Sans, Helvetica Neue, Helvetica, sans-serif;
+  font-family: Roboto, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 300;
   color: #5d6d77
 }
 
@@ -86,7 +87,8 @@ h1, h2 {
 h2 {
   position: relative;
   text-align: center;
-  font-size: 7vw
+  font-size: 7vw;
+  font-family: Playfair Display, serif;
 }
 
 h3 {
@@ -1215,12 +1217,12 @@ code:not([class*=language]):after, code:not([class*=language]):before {
 
 .btn {
   display: inline-block;
-  padding: .75em .8em;
+  padding: .5em .5em;
   text-align: center;
   border-radius: 3px;
   border: 1px solid #95a5a6;
   color: #34495e;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color: rgba(52, 73, 94, 0);
   transition: .2s ease-out;
   cursor: pointer;
