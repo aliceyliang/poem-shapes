@@ -67,7 +67,7 @@ Demo.prototype._generateBoxes = function (itemsToCreate) {
     box.setAttribute('data-chars', arr.chars);
 
     box.innerHTML =   ` <a href="https://poets.org/poem/${arr.short_name}" target="_blank">
-                        <img src = "../img/${arr.short_name}.svg" alt=${arr.title}>
+                        <img src = "./img/${arr.short_name}.svg" alt=${arr.title}>
                         </img></a>`
     var modClass = arr.fig;
     if (modClass == '') {
