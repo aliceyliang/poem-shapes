@@ -85,6 +85,7 @@ h1, h2 {
 
 h2 {
   position: relative;
+  text-align: center;
   font-size: 7vw
 }
 
@@ -99,7 +100,7 @@ h4 {
 
 p {
   margin: 1em 0;
-  line-height: 1.4
+  line-height: 1.4;
 }
 
 .intro-text {
@@ -1217,7 +1218,7 @@ code:not([class*=language]):after, code:not([class*=language]):before {
   padding: .75em .8em;
   text-align: center;
   border-radius: 3px;
-  border: 1px solid #34495e;
+  border: 1px solid #95a5a6;
   color: #34495e;
   font-size: 1rem;
   background-color: rgba(52, 73, 94, 0);
@@ -1489,9 +1490,9 @@ span.demo-link-container:before {
 
 .site-nav {
   padding: 10px 0;
-  border-bottom: 1px solid #e1e5e6;
-  margin-bottom: 28px;
-  background: #ecf0f1
+  /* border-bottom: 1px solid #e1e5e6; */
+  /* margin-bottom: 28px; */
+  background: #ffffff
 }
 
 .site-nav__content {

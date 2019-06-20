@@ -66,7 +66,9 @@ Demo.prototype._generateBoxes = function (itemsToCreate) {
     box.setAttribute('data-lengths', arr.max_len);
     box.setAttribute('data-chars', arr.chars);
 
-    box.innerHTML =   ` <img src = "../img/${arr.short_name}.svg" alt=${arr.title}> `
+    box.innerHTML =   ` <a href="https://poets.org/poem/${arr.short_name}" target="_blank">
+                        <img src = "../img/${arr.short_name}.svg" alt=${arr.title}>
+                        </img></a>`
     var modClass = arr.fig;
     if (modClass == '') {
       var ht = Math.round(arr.num_lines * (47/6));

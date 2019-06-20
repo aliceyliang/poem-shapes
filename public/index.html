@@ -45,6 +45,26 @@
 </head>
 <body class="">
 
+  <nav class="site-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-12@sm site-nav__content">
+          <a class="site-nav__logo" href="/">
+          </a>
+          <div class="site-nav__links">
+            <div class="site-nav__link">
+              <a href = "/about" target="_blank"><button class="site-nav__link btn" >About</button></a>
+            </div>
+
+              <div class="site-nav__link">
+                <a href = "/help"><button class="site-nav__link btn" >Help</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
 
 <main role="main" id="main">
   <style>
@@ -114,7 +134,7 @@
   <div class="row">
     <div class="col-12@sm">
       <h2>Poem Shapes</h2>
-      <p>Explore poems by their shape!</p>
+      <p style="text-align:center;">Explore poems by their shape! When a poem shape intrigues you, click the poem to read it.</p>
     </div>
   </div>
 </section>
@@ -124,28 +144,28 @@
     <div class="col-12@sm">
 
       <fieldset class="filters-group">
-        <legend class="filter-label">Sort</legend>
+        <legend class="filter-label">Sort the poems</legend>
         <div class="btn-group" id="sorter">
           <label class="btn active">
             <input type="radio" name="sort-value" value="dom" checked=""> Default
           </label>
           <label class="btn">
-            <input type="radio" name="sort-value" value="most-reviews"> Most Lines
+            <input type="radio" name="sort-value" value="most-reviews"> Most lines
           </label>
           <label class="btn">
-            <input type="radio" name="sort-value" value="least-reviews"> Fewest Lines
+            <input type="radio" name="sort-value" value="least-reviews"> Fewest lines
           </label>
           <label class="btn">
-            <input type="radio" name="sort-value" value="longest-reviews"> Longest Lines
+            <input type="radio" name="sort-value" value="longest-reviews"> Longest lines
           </label>
           <label class="btn">
-            <input type="radio" name="sort-value" value="shortest-reviews"> Shortest Lines
+            <input type="radio" name="sort-value" value="shortest-reviews"> Shortest lines
           </label>
           <label class = "btn">
-          <input type="radio" name="sort-value" value="most-chars"> Most Characters
+          <input type="radio" name="sort-value" value="most-chars"> Most characters
         </label>
         <label class="btn">
-          <input type="radio" name="sort-value" value="least-chars"> Fewest Characters
+          <input type="radio" name="sort-value" value="least-chars"> Fewest characters
         </label>
         </div>
       </fieldset>
@@ -168,7 +188,7 @@
 
       <div>
         <br>
-        <p class="filter-label">Actions</p>
+        <p class="filter-label">Change it up</p>
         <div class="btn-group">
           <button class="btn" id="prepend">Add new poems to the top</button>
           <button class="btn" id="append">Add new poems to the bottom</button>
@@ -186,22 +206,18 @@
       <div id="my-shuffle" class="items shuffle" style="position: relative; overflow: hidden; height: 240px; transition: height 250ms ease 0s;">
 
         <div class="box  shuffle-item shuffle-item--visible"
-                    data-reviews="52" data-max-len="30" data-chars="724"
-                    style="height: 407px;">
-        <a href="https://poets.org/poem/green-crabs-shell" target="_blank">
-            <img src = '../img/green-crabs-shell.svg'></img></a>
+                    data-reviews="16" data-max-len="47" data-chars="456"
+                    style="height: 125px;">
+        <a href="https://poets.org/poem/black-maria" target="_blank">
+            <img src = '../img/black-maria.svg'></img></a>
         </div>
-
-
 
         <div class="box  shuffle-item shuffle-item--visible"
-                    data-reviews="20" data-max-len="41" data-chars="594"
-                    style="height: 157px;">
-        <a href="https://poets.org/poem/barter" target="_blank">
-            <img src = '../img/barter.svg'></img></a>
+                    data-reviews="59" data-max-len="43" data-chars="856"
+                    style="height: 462px;">
+        <a href="https://poets.org/poem/amores-vii" target="_blank">
+            <img src = '../img/amores-vii.svg'></img></a>
         </div>
-
-
 
         <div class="box w3 shuffle-item shuffle-item--visible"
                     data-reviews="4" data-max-len="195" data-chars="553"
@@ -210,32 +226,49 @@
             <img src = '../img/natural-history-my-white-girl.svg'></img></a>
         </div>
 
+        <div class="box  shuffle-item shuffle-item--visible"
+                    data-reviews="100" data-max-len="57" data-chars="2686"
+                    style="height: 783px;">
+        <a href="https://poets.org/poem/persimmons" target="_blank">
+            <img src = '../img/persimmons.svg'></img></a>
+        </div>
 
 
         <div class="box  shuffle-item shuffle-item--visible"
-                    data-reviews="59" data-max-len="57" data-chars="2006"
-                    style="height: 462px;">
-        <a href="https://poets.org/poem/city-sea" target="_blank">
-            <img src = '../img/city-sea.svg'></img></a>
+                    data-reviews="14" data-max-len="51" data-chars="401"
+                    style="height: 110px;">
+        <a href="https://poets.org/poem/voice-god" target="_blank">
+            <img src = '../img/voice-god.svg'></img></a>
+        </div>
+
+
+        <div class="box  shuffle-item shuffle-item--visible"
+                    data-reviews="18" data-max-len="48" data-chars="515"
+                    style="height: 141px;">
+        <a href="https://poets.org/poem/my-first-roses" target="_blank">
+            <img src = '../img/my-first-roses.svg'></img></a>
         </div>
 
 
 
-        <div class="box w3 shuffle-item shuffle-item--visible"
-                    data-reviews="45" data-max-len="222" data-chars="3793"
-                    style="height: 372px;">
-        <a href="https://poets.org/poem/spontaneous-me" target="_blank">
-            <img src = '../img/spontaneous-me.svg'></img></a>
+
+        <div class="box  shuffle-item shuffle-item--visible"
+                    data-reviews="36" data-max-len="46" data-chars="1257"
+                    style="height: 282px;">
+        <a href="https://poets.org/poem/exhibition" target="_blank">
+            <img src = '../img/exhibition.svg'></img></a>
         </div>
 
 
 
         <div class="box  shuffle-item shuffle-item--visible"
-                    data-reviews="28" data-max-len="55" data-chars="344"
-                    style="height: 219px;">
-        <a href="https://poets.org/poem/note-absence" target="_blank">
-            <img src = '../img/note-absence.svg'></img></a>
+                    data-reviews="38" data-max-len="67" data-chars="1593"
+                    style="height: 298px;">
+        <a href="https://poets.org/poem/symbolical-head-1883-when-was-last-time" target="_blank">
+            <img src = '../img/symbolical-head-1883-when-was-last-time.svg'></img></a>
         </div>
+
+
 
 
 
@@ -247,13 +280,70 @@
         </div>
 
 
+        <div class="box  shuffle-item shuffle-item--visible"
+                    data-reviews="26" data-max-len="38" data-chars="613"
+                    style="height: 204px;">
+        <a href="https://poets.org/poem/trees-need-not-walk-earth" target="_blank">
+            <img src = '../img/trees-need-not-walk-earth.svg'></img></a>
+        </div>
+
+
+        <div class="box  shuffle-item shuffle-item--visible"
+                    data-reviews="28" data-max-len="37" data-chars="575"
+                    style="height: 219px;">
+        <a href="https://poets.org/poem/red-brocade" target="_blank">
+            <img src = '../img/red-brocade.svg'></img></a>
+        </div>
+
+        <div class="box  shuffle-item shuffle-item--visible"
+                    data-reviews="25" data-max-len="43" data-chars="631"
+                    style="height: 196px;">
+        <a href="https://poets.org/poem/very-old-woman" target="_blank">
+            <img src = '../img/very-old-woman.svg'></img></a>
+        </div>
 
         <div class="box w2 shuffle-item shuffle-item--visible"
-                    data-reviews="13" data-max-len="79" data-chars="553"
-                    style="height: 106px;">
-        <a href="https://poets.org/poem/weeds" target="_blank">
-            <img src = '../img/weeds.svg'></img></a>
+                    data-reviews="20" data-max-len="85" data-chars="881"
+                    style="height: 163px;">
+        <a href="https://poets.org/poem/learning-swim" target="_blank">
+            <img src = '../img/learning-swim.svg'></img></a>
         </div>
+
+
+
+        <div class="box w3 shuffle-item shuffle-item--visible"
+                    data-reviews="25" data-max-len="245" data-chars="1676"
+                    style="height: 207px;">
+        <a href="https://poets.org/poem/doing" target="_blank">
+            <img src = '../img/doing.svg'></img></a>
+        </div>
+
+
+
+        <div class="box  shuffle-item shuffle-item--visible"
+                    data-reviews="27" data-max-len="37" data-chars="594"
+                    style="height: 212px;">
+        <a href="https://poets.org/poem/mixed-always" target="_blank">
+            <img src = '../img/mixed-always.svg'></img></a>
+        </div>
+
+
+
+                <div class="box w2 shuffle-item shuffle-item--visible"
+                            data-reviews="35" data-max-len="135" data-chars="2170"
+                            style="height: 286px;">
+                <a href="https://poets.org/poem/beauty-1" target="_blank">
+                    <img src = '../img/beauty-1.svg'></img></a>
+                </div>
+
+
+
+
+
+
+
+
+
 
 
       </div>
